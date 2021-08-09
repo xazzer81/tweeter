@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFF;
+  padding: 1.5em;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+nav span {
+  font-family: Bungee, sans-serif;
+}
+
