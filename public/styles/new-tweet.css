@@ -1,0 +1,22 @@
+.new-tweet {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #f4f1ec;
+  outline: none;
+}
+
+.form-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFF;
+  font-family: Bungee, sans-serif;
+}
