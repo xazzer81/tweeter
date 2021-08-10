@@ -13,10 +13,14 @@ textarea {
 .form-foot {
   display: flex;
   justify-content: space-between;
+  font-family: Bungee, sans-serif;
 }
 
 button {
   background-color: #4056A1;
   color: #FFF;
-  font-family: Bungee, sans-serif;
+}
+
+.illegal {
+  color: red;
 }
