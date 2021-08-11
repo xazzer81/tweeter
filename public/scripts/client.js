@@ -57,9 +57,20 @@ $( document ).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
     const data = $(this).serialize();
+    const counter = $(this).find('.counter').val();   //The value of the character counter on form submission
+    
+    if (counter < 0) {
+      alert('Limited to 140 characters for a tweet');
+      return;
+    }
+    
+    // Check if something is typed or not.
+    if (data.length === 5) {  //Since serialize() returns a string, if nothing is typed the string returned is text=
+      alert ('Please write something');
+    }
 
     $.ajax({method: 'POST', url: '/tweets', data: data})
   });
 
-  renderTweets(data);
+  loadTweets();
 });
