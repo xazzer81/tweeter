@@ -30,10 +30,8 @@ $( document ).ready(function() {
     }
   ]
 
+  // Render all tweets in the database.
   const renderTweets = function(tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
     for(const tweet of tweets) {
       const tweetElement = createTweetElement(tweet);
       $('.all-tweets').append(tweetElement);
