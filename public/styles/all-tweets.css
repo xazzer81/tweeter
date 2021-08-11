@@ -1,0 +1,50 @@
+.all-tweets{
+  margin-top: 2em;
+  margin-bottom: 2em; 
+}
+
+.tweet {
+  border: 5px solid #545149;
+  padding: 1em;
+}
+
+/* Tweet header styles */
+.all-tweets header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#leftHead {
+  display: flex;
+}
+
+.name {
+  padding-left: 0.5em;
+  font-weight: 200;
+}
+
+.handle {
+  color: rgb(73, 118, 187);
+}
+
+/* Tweet footer styles */
+
+footer {
+  border-top: 4px solid #545149;
+}
+
+.footer-text {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+}
+
+/* Hover styles */
+
+.tweet:hover {
+  box-shadow: 8px 7px 0px 0px #d45d5d
+}
+
+.icons :hover{
+  color: rgb(73, 118, 187);
+}
