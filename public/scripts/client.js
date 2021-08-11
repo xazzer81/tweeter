@@ -66,6 +66,11 @@ $( document ).ready(function() {
     `
     return markup;
   }
-  
+
+  //Listen to form submit request.
+  $('.new-tweet').submit((event) => {
+    event.preventDefault();
+    console.log(event)
+  });
   renderTweets(data);
 });
