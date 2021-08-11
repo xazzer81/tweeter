@@ -69,9 +69,15 @@ $( document ).ready(function() {
       alert ('Please write something');
     }
 
-    $.ajax({method: 'POST', url: 'http://localhost:8080/tweets', data: data})
-    
-    loadTweets();
+    $.ajax({
+      method: 'POST', 
+      url: 'http://localhost:8080/tweets', 
+      data: data, 
+      success: () => {
+        loadTweets();
+        $(this).find('textarea').val('');
+      }
+    });  
   });
 
   loadTweets();
