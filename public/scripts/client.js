@@ -63,17 +63,21 @@ $( document ).ready(function() {
   //Listen to form submit request.
   $('form').on('submit', function(event) {
     event.preventDefault();
+    $('#error').hide(100);
+
     const data = $(this).serialize();
     const counter = $(this).find('.counter').val();   //The value of the character counter on form submission
     
     if (counter < 0) {
-      alert('Limited to 140 characters for a tweet');
+      $('#error').html('Limited to 140 characters for a tweet');
+      $('#error').show(100);
       return;
     }
 
     // Check if something is typed or not.
     if (data.length === 5) {  //Since serialize() returns a string, if nothing is typed the string returned is text=
-      alert ('Please write something');
+      $('#error').html('Please write something');
+      $('#error').show(100);
     }
 
     $.ajax({
