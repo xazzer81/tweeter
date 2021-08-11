@@ -16,7 +16,7 @@ const tweetData = {
 }
 
 $( document ).ready(function() {
-  // Create a new tweet html element
+  // Create a new tweet element. ---- Using time ago library to format the time.
   const createTweetElement = function(tweetData) {
     const markup = `
       <article class='tweet'>
@@ -31,8 +31,8 @@ $( document ).ready(function() {
         </header>
         <p>${tweetData['content'].text}</p>
         <footer>
-          <div class = 'footer-text'>
-            <span class='time'>${tweetData.created_at}</span>
+          <div class = 'footer-text'> 
+            <span class='time'>${timeago.format(tweetData.created_at)}</span>
             <span class='icons'>
             <i class="fas fa-flag"></i>
             <i class="fas fa-retweet"></i>
@@ -44,7 +44,5 @@ $( document ).ready(function() {
     `
     return markup;
   }
-
-  const $tweet = createTweetElement(tweetData);
-  console.log($tweet);
+  console.log(createTweetElement(tweetData));
 });
