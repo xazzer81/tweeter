@@ -9,7 +9,7 @@ $( document ).ready(function() {
   const renderTweets = function(tweets) {
     for(const tweet of tweets) {
       const tweetElement = createTweetElement(tweet);
-      $('.all-tweets').append(tweetElement);
+      $('.all-tweets').prepend(tweetElement);
     }
   }
 
@@ -46,7 +46,7 @@ $( document ).ready(function() {
   const loadTweets = function() {
     $.ajax({
       method: 'GET', 
-      url: '/tweets', 
+      url: 'http://localhost:8080/tweets', 
       success: function(data) {
         renderTweets(data);
       }
@@ -63,13 +63,15 @@ $( document ).ready(function() {
       alert('Limited to 140 characters for a tweet');
       return;
     }
-    
+
     // Check if something is typed or not.
     if (data.length === 5) {  //Since serialize() returns a string, if nothing is typed the string returned is text=
       alert ('Please write something');
     }
 
-    $.ajax({method: 'POST', url: '/tweets', data: data})
+    $.ajax({method: 'POST', url: 'http://localhost:8080/tweets', data: data})
+    
+    loadTweets();
   });
 
   loadTweets();
