@@ -4,9 +4,15 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $( document ).ready(function() {
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   // Render all tweets in the database.
   const renderTweets = function(tweets) {
+
     for(const tweet of tweets) {
       const tweetElement = createTweetElement(tweet);
       $('.all-tweets').prepend(tweetElement);
@@ -26,7 +32,7 @@ $( document ).ready(function() {
             <h3 class='handle'>${tweetData['user'].handle}</h3>
           </div>
         </header>
-        <p>${tweetData['content'].text}</p>
+        <p>${escape(tweetData['content'].text)}</p>
         <footer>
           <div class = 'footer-text'> 
             <span class='time'>${timeago.format(tweetData.created_at)}</span>
@@ -48,6 +54,7 @@ $( document ).ready(function() {
       method: 'GET', 
       url: 'http://localhost:8080/tweets', 
       success: function(data) {
+        $('.all-tweets').empty();  //Remove all tweets before displaying again
         renderTweets(data);
       }
     });
