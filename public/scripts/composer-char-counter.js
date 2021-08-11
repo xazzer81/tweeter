@@ -7,12 +7,11 @@ $(document).ready(function() {
       .next();
     
     // Make counter red if its less than 0.
-    if (counter.html() < 0) {
+    if (counter.html() <= 0) {
       $(counter).addClass('illegal');
     } else {
       $(counter).removeClass('illegal');
     }
-
     counter.html(140 - len);
   });
 });
