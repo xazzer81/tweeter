@@ -24,3 +24,11 @@ button {
 .illegal {
   color: red;
 }
+
+#error {
+  background-color: rgb(240, 216, 1);
+  color: rgb(180, 15, 15);
+  padding: 2em;
+  text-align: center;
+  font-weight: bold;
+}
