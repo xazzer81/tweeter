@@ -87,6 +87,7 @@ $( document ).ready(function() {
       success: () => {
         loadTweets();
         $(this).find('textarea').val('');
+        $(this).find('.counter').html('140');  
       }
     });  
   });
