@@ -34,8 +34,18 @@ main {
   body {
     padding-top: 120px;
   }
-}
 
+  #content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 60%;
+    margin-right: 2em;  
+    margin-top: 200px;
+  }
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

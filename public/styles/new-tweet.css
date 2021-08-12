@@ -33,3 +33,13 @@ button {
   font-weight: bold;
   display: none;
 }
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet h2 {
+    margin-top: 0;
+  }
+
+  #error {
+    margin-top: 0;
+  }
+}

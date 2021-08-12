@@ -39,35 +39,38 @@
       </div>
     </nav>
 
-    <header id='main-header'>
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      
-      <!-- Compose tweet section -->
-      <section class="new-tweet">
-        <p id='error'>Dummy text Dummy text Dummy text Dummy text</p>
-        <h2>Compose Tweet</h2>
-        <form id="tweet-form" method="POST" action="/tweets">
-          <label for="tweet-text" name='text'></label>
-          <textarea id="tweet-text" placeholder="What are you humming about?" name="text"></textarea>
-          <div class = 'form-foot'>
-            <button type="submit" name="btn">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-
-      <!--Tweet content here-->
-        <section class='all-tweets'></section>
-    </main>
+    <!-- Content including the main header and then the compose tweet and tweets -->
+    <div id='content'>
+      <header id='main-header'>
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>Your Name</h2>
+        </div>
+      </header>
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        
+        <!-- Compose tweet section -->
+        <section class="new-tweet">
+          <p id='error'>Dummy text Dummy text Dummy text Dummy text</p>
+          <h2>Compose Tweet</h2>
+          <form id="tweet-form" method="POST" action="/tweets">
+            <label for="tweet-text" name='text'></label>
+            <textarea id="tweet-text" placeholder="What are you humming about?" name="text"></textarea>
+            <div class = 'form-foot'>
+              <button type="submit" name="btn">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+  
+        <!--Tweet content here-->
+          <section class='all-tweets'></section>
+      </main>
+    </div>
   </body>
 </html>
