@@ -21,6 +21,10 @@ button {
   color: #FFF;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .illegal {
   color: red;
 }
