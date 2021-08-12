@@ -1,3 +1,7 @@
+@mixin vertical() {
+  vertical-align: middle;
+}
+
 #main-header {
   display: flex;
   height: 400px;
@@ -8,6 +12,10 @@
   background-color: #b30101;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
   color: #FFF;
+
+  img {
+    @include vertical;
+  }
 }
 
 /* Media Queries ----- Desktop ----*/
