@@ -19,8 +19,8 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screenshots
 - App in desktop view !["App in desktop view"](https://github.com/xazzer81/tweeter/blob/master/docs/desktop.png)
 - App in mobile view 
-- !["App in mobile view"](https://github.com/xazzer81/tweeter/blob/master/docs/responsive.png)
+ !["App in mobile view"](https://github.com/xazzer81/tweeter/blob/master/docs/responsive.png)
 - App error display 
-- !["App error display"](https://github.com/xazzer81/tweeter/blob/master/docs/limited.png)
+ !["App error display"](https://github.com/xazzer81/tweeter/blob/master/docs/limited.png)
 - App composes new tweets and displays them" 
-- !["App composes new tweets and displays them"](https://github.com/xazzer81/tweeter/blob/master/docs/tweet.png)
+ !["App composes new tweets and displays them"](https://github.com/xazzer81/tweeter/blob/master/docs/tweet.png)
