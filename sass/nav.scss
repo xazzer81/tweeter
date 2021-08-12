@@ -10,20 +10,24 @@ nav {
   justify-content: space-between;
   align-items: flex-end;
   z-index: 1;
-}
-nav span {
-  font-family: Bungee, sans-serif;
-}
-nav #rightNav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-nav #rightNav i {
-  color: #ffee00;
-}
-nav p {
-  margin: 0;
+
+  span {
+    font-family: Bungee, sans-serif;
+  }
+
+  #rightNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #rightNav i {
+    color: #ffee00;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 /* Media Queries ----- Desktop ----*/
@@ -35,6 +39,6 @@ nav p {
   }
 
   #rightNav i {
-    color: #f35a5a;
+      color: rgb(243, 90, 90);
   }
 }

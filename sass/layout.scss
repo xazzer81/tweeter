@@ -3,10 +3,14 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+$font-sourceSans: 'Source Sans Pro', sans-serif;
+$main-color: #f4f1ec;
+$color-red: #b30101;
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,18 +18,19 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: $main-color;
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font-sourceSans;
 }
 
 main {
   display: flex;
   flex-direction: column;
   width: 90%;
-  background-color: #f4f1ec;
+  background-color: $main-color;
   margin: auto;
 }
 
@@ -42,10 +47,11 @@ main {
 
   main {
     width: 60%;
-    margin-right: 2em;
+    margin-right: 2em;  
     margin-top: 200px;
   }
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ 

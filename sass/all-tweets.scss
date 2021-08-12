@@ -1,6 +1,6 @@
-.all-tweets {
+.all-tweets{
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 2em; 
 }
 
 .tweet {
@@ -29,10 +29,11 @@
 }
 
 .handle {
-  color: #4976bb;
+  color: rgb(73, 118, 187);
 }
 
 /* Tweet footer styles */
+
 footer {
   border-top: 4px solid #545149;
 }
@@ -44,10 +45,11 @@ footer {
 }
 
 /* Hover styles */
+
 .tweet:hover {
-  box-shadow: 8px 7px 0px 0px #d45d5d;
+  box-shadow: 8px 7px 0px 0px #d45d5d
 }
 
-.icons :hover {
-  color: #4976bb;
+.icons :hover{
+  color: rgb(73, 118, 187);
 }
