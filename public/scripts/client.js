@@ -28,7 +28,7 @@ $( document ).ready(function() {
             <img src=${tweetData['user'].avatars}>
             <h3 class='name'>${tweetData['user'].name}</h3> 
           </div>
-          <div id='righHead'>
+          <div id='rightHead'>
             <h3 class='handle'>${tweetData['user'].handle}</h3>
           </div>
         </header>

@@ -9,6 +9,10 @@
   margin-top: 2em;
 }
 
+.tweet p {
+  padding: 1em;
+}
+
 /* Tweet header styles */
 .all-tweets header {
   display: flex;
